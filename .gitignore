@@ -1,0 +1,6 @@
+.git/
+.muktadir_compute-accessKeys.csv
+.terraform.lock.hcl
+.terraform/
+terraform.tfstate*
+jenkins-master.pem
