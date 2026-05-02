@@ -16,10 +16,10 @@ data "aws_ami" "al2023" {
 resource "aws_instance" "test_server" {
   ami           = data.aws_ami.al2023.id
   instance_type = var.instance_type
-  count = var.instance_count
+  count         = var.instance_count
 
   tags = {
-    name = "${terraform.workspace}-server"
+    name        = "${terraform.workspace}-server"
     environment = terraform.workspace
   }
 }
